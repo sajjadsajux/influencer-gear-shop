@@ -1,0 +1,95 @@
+/* Font Setup */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.poppins{
+  font-family: "Poppins", serif;
+  font-style: normal;
+  font-size: 1rem
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.inter{
+  font-family: "Inter", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+.manrope{
+  font-family: "Manrope", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+body{
+  max-width: 1440px;
+margin: 0 auto;
+}
+/* Navbar */
+header{
+  margin: 30px 120px;
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.brand{
+  font-size: 1.5rem;
+  color: #3A3A3A;
+  font-weight: 700;
+}
+.nav-items ul{
+  display: flex;
+  flex-direction: row;
+  gap: 34px;
+  align-items: center;
+  list-style: none;
+}
+.nav-items ul li a{
+text-decoration: none;
+font-weight: 600;
+color: #3A3A3A;
+
+}
+
+/* Banner */
+.banner-container{
+  background-image: url(../images/Circle\ design.svg);
+  background-repeat: no-repeat;
+  background-position: right center;
+  align-items: center;
+  
+}
+.banner-container{
+  display: flex;
+  justify-content: space-between;
+}
+.banner-contents h1{
+  font-size: 3.25rem;
+  font-weight: 700;
+  color: #3A3A3A;
+  width: 582px;
+  margin-top: 50px;
+}
+.banner-contents p{
+  width: 505px;
+  font-weight: 600;
+}
+.primary-button{
+  background-color: #E02C6D;
+  border-radius: 41px;
+  border: none;
+  color: #FFFFFF;
+  font-weight: 700;
+  padding: 10px 24px;
+  width: 196px;
+  height: 44px;
+}
+
+.banner-img img{
+width: 440px;
+margin: 31px;
+
+}
