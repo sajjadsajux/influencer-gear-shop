@@ -4,7 +4,6 @@
 .poppins{
   font-family: "Poppins", serif;
   font-style: normal;
-  font-size: 1rem
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
@@ -55,41 +54,137 @@ color: #3A3A3A;
 }
 
 /* Banner */
-.banner-container{
-  background-image: url(../images/Circle\ design.svg);
-  background-repeat: no-repeat;
-  background-position: right center;
-  align-items: center;
-  
+.banner-content{
+  max-width: 582px;
+  margin: 0;
 }
-.banner-container{
-  display: flex;
-  justify-content: space-between;
-}
-.banner-contents h1{
+.banner-heading{
   font-size: 3.25rem;
   font-weight: 700;
-  color: #3A3A3A;
-  width: 582px;
-  margin-top: 50px;
+  margin: 0;
+  
 }
-.banner-contents p{
-  width: 505px;
+.banner-desc{
   font-weight: 600;
 }
-.primary-button{
+.banner-button{
   background-color: #E02C6D;
   border-radius: 41px;
   border: none;
-  color: #FFFFFF;
   font-weight: 700;
-  padding: 10px 24px;
-  width: 196px;
-  height: 44px;
+  color: #FFFFFF;
 }
 
-.banner-img img{
-width: 440px;
-margin: 31px;
+.banner-container{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  align-items: center;
+
+}
+
+.banner-imgs{
+  background-image: url(../images/Circle\ design.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 475px;
+  width: 475px;
+
+
+}
+.banner-imgs img{
+  width: 100%;
+  height: 440px;
+}
+
+
+
+
+/* Responsive Section */
+
+@media screen and (max-width:576px) {
+  header{
+    margin: 0;
+  }
+  
+  .nav-items>ul{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+   padding: 0 ;
+  }
+  nav{
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+   
+  }
+ .banner-container{
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 1px;
+ }
+.banner-content{
+  text-align: center;
+  align-items: center;
+
+}
+.banner-imgs{
+ 
+  height: 257px;
+  width: 257px;
+}
+.banner-imgs img{
+  width: 240px;
+  height: 225px;
+  margin: 10px;
+}
+
+
+
+}
+
+@media screen and (min-width:576px) and (max-width: 992px) {
+  
+  header{
+    margin: 0;
+  }
+
+  .nav-items>ul{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+   padding: 0 ;
+  }
+  nav{
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+   
+  }
+ .banner-container{
+  /* margin: 0 auto; */
+ }
+.banner-content{
+    margin: 0 auto;
+    text-align: center;
+}
+.banner-container{
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 1px;
+ }
+.banner-imgs{
+ 
+  height: 257px;
+  width: 257px;
+}
+.banner-imgs img{
+  width: 240px;
+  height: 225px;
+  margin: 10px;
+}
+
 
 }
